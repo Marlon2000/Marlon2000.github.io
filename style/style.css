@@ -1,0 +1,255 @@
+/* General */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #b8d8f5;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background: #f78d36;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header a:hover{
+    color: #e64141;
+    font-weight: bolder;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 60px 0 60px;
+}
+
+header #logo{
+    float: left;
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 90px;
+}
+
+header .home{
+    color: #1f53b4;
+    font-weight: bolder;
+}
+
+/* Presentation */
+#presentation{
+    min-height: 800px;
+    background: url("../img/surfacebook.jpg") no-repeat 0 -600px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#presentation h1{
+    margin-top: 300px;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+#presentation h3{
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+/* Posts */
+#posts{
+    margin-top: 100px;
+    clear: both;
+    overflow: hidden;
+}
+
+#posts .article1{
+   float: left;
+   width: 50%;
+   text-align: left;
+   padding: 10px;
+}
+
+#posts .article2{
+    margin-top: 75px;
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
+
+.date{
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+figcaption{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.buttons{
+    position: absolute;
+    left: 19%;
+    border: 1px solid #ffffff;
+    background-color: #e8491d;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    text-align: center;
+    display: inline;
+}
+
+.buttons:hover{
+    background-color: #ffffff;
+    color: #1197af;
+}
+
+/* Sidelinks */
+aside{
+    width: 280px;
+    float: right;
+    padding: 0 0 0 20px;
+    margin-top: -1400px;
+    background-color: #e8491d;
+}
+
+aside h2{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+aside #myLinks a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #eeeeee;
+}
+
+aside #myLinks a:hover{
+    color: #985d6a;
+    background-color: #efefef;
+}
+
+aside #personalInformation{
+    display: block;
+    margin-top: 784px;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    color: #ffffff
+}
+
+#main hgroup{
+    font-size: 25px;
+}
+
+#main h3{
+    margin-top: -30px;
+    color: rgb(104, 103, 103);
+}
+
+.article_2 h2{
+    margin-top: 80px;
+}
+
+#figure1, #figure2{
+    margin-left: -40px;
+}
+
+#figcaption1, #figcaption2{
+    margin-left: 40px;
+}
+
+.link-button{
+    position: absolute;
+    left: 10%;
+    border: 1px solid #ffffff;
+    background-color: #e8491d;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    text-align: center;
+    display: inline;
+}
+
+.link-button:hover{
+    background-color: #ffffff;
+    color: #1197af;
+}
+
+#moreAbout hgroup{
+    font-size: 35px;
+}
+
+#moreAbout h3{
+    margin-top: -50px;
+    font-size: 25px;
+    color: rgb(104, 103, 103);
+}
+
+#moreAbout p{
+    font-size: 20px;
+    color: #7c7c7c;
+}
+
+#myPhoto{
+    margin-left: -40px;
+}
+
+table{
+    margin-top: 50px;
+    margin-left: 80px;
+    border-collapse: collapse;
+    margin-bottom: 650px;
+}
+
+table th{
+    text-align: left;
+    background-color: #1f53b4;
+    color: #ffffff;
+    padding: 4px 30px 4px 8px;
+}
+
+table td{
+    padding: 4px 8px;
+    background-color: #efefef;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 60px;
+    color: #1f53b4;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
