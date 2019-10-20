@@ -4,67 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My personal portofolio built from scratch">
+    <meta name="description" content="My personal portfolio built from scratch">
     <meta name="author" content="Marlon Weiss">
-    <title>Marlon's Portofolio | Projects</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./style/style.css">   
+    <title>Marlon's Portfolio | Projects</title>
 </head>
 <body>
     <div class="page">
         <header>
             <div class="container">
+                <!-- My own Logo -->    
                 <div id="logo">
-                    <img src="./img/logo.png" alt="MyLogo">
+                    <a href="index.html"><img src="./img/logo.png" alt="MyLogo"></a>
                 </div>
-                <nav>
+                <!-- Navigation -->
+                <nav class="mainNav">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li class="home"><a href="projects.html" class="home">projects</a></li>
+                        <li class="home"><a href="index.html" class="home">home</a></li>
+                        <li><a href="projects.html" class="project">projects</a></li>
                         <li><a href="about.html" class="about">about me</a></li>
-                        <li><a href="contact.html" class="contact">contact</a></li>
+                        <li><a href="contact.html" class="contacts">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        
-        <section id="main">
-            <div class="container">
-                <article class="article_1">
-                    <hgroup>
-                        <h2 class="title">My own uno card game project</h2>
-                        <h3 class="subtitle">from planning until realising</h3>
-                    </hgroup>
-                    <figure id="figure1">
-                            <img src="./img/UNO_Stapel.jpg" alt="UNO Stack">
-                            <figcaption id="figcaption1">Uno Card Game</figcaption>
-                    </figure>
-                    <p>This card game is written in the object oriented language Java.<br />
-                        There was a huge effort which has been made, in order to get it all<br />
-                        working, since all the classes have to interact with each other.</p>
-                </article>
-                <a href="https://github.com/Marlon2000?tab=repositories" class="link-button">View Repository</a>
-                <article class="article_2">
-                    <hgroup>
-                        <h2>Due to lack of time still in development</h2>
-                        <h3>I really look forward finishing and publishing it though</h3>
-                        </hgroup>
-                        <figure id="figure2">
-                            <img src="./img/Android_Game.jpg" alt="Android_Game">
-                            <figcaption id="figcaption2">Android Indie Game</figcaption>
-                        </figure>
-                        <p>Want to play with your friends the latest and greatest tactic based game.<br />
-                            So you found the right place here, just donate me 10k<br />
-                            and you get the alpha version.</p>
-                </article>
-                <a href="https://github.com/Marlon2000?tab=repositories" class="link-button">View Repository</a>
+
+        <!-- Project Content -->
+        <section id="projects">
+            <div class="content">
+                <div class="section-heading">
+                    <h1>Portfolio</h1>
+                    <h6>View some of my recent projects</h6>
+                </div>
+                <div class="portfolio-items">
+                    <div class="project-img portfolio-margin">
+                        <img src="./img/UNO_Stapel.jpg" alt="UNO Stack">
+                    </div>
+                    <div class="portfolio-descriptions">
+                        <h6 class="subtitle">Object Oriented Design</h6>
+                        <h2 class="title">Uno Card Game</h2>
+                        <p>
+                            This card game is written in the object-oriented based language Java.
+                            A detailed planning and a good implementation had to be done, in order to get everything working fine.
+                            All the classes have to interact with each other and all the cards need to be properly displayed.
+                            So it took me a long time to find out how all the different classes should interact with each other. 
+                            Also I had to consider all the rules, which I had to implement afterwards.
+                            But now as it is done I am quite happy with the overall result.
+                        </p>
+                        <a href="https://github.com/Marlon2000/UNO-game" class="buttons">View Repository</a>
+                    </div>
+                </div>
+                <div class="portfolio-items">
+                    <div class="portfolio-descriptions portfolio-margin">
+                        <h6 class="subtitle">Game Development</h6>
+                        <h2 class="title">Chappie's adventure</h2>
+                        <p>
+                            A 2D-based platform game, where you go through an adventure with your character Chappie.
+                            This game is written in Java. It is written without OpenGL so it was a hard path to finish it.
+                            But since game development is a bit more motivating in my opinion I was able to spend much free time in it.
+                            So now it's just finished and works fine on any PC, even low-end systems. 
+                            I did also implement some enemies and traps to make the game overall more challenging. 
+                        </p>
+                        <a href="https://github.com/Marlon2000?tab=repositories" class="buttons">View Repository</a>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/Java_Chappie.jpg" alt="Android_Game">
+                    </div>
+                </div>
+                <div class="portfolio-items">
+                    <div class="project-img portfolio-margin">
+                        <img src="./img/Android_Game.jpg" alt="Android_Game">
+                    </div>
+                    <div class="portfolio-descriptions">
+                        <h6 class="subtitle">Android Game Development</h6>
+                        <h2 class="title">Android Indie Game</h2>
+                        <p>
+                            Due to lack of time still in development. I really look forward to finish and publish it.
+                            Want to play with your friends the latest and greatest tactic-based game.
+                            So you found the right place here, just donate me 10k and you will get the alpha version. 
+                            This game will be able to run on any android device. And I hope you will appreciate the effort,
+                            which has been put in since game development is completely different from regular apps development.
+                        </p>
+                        <a href="https://github.com/Marlon2000?tab=repositories" class="buttons">View Repository</a>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Footer of my page -->
+        <footer>
+            <p>&copy; 2019 Marlon Weiss</p>
+        </footer>
     </div>
-    
-    <footer>
-        <p>&copy; 2019 Marlon Weiss</p>
-    </footer>
-    </div>
+    <!-- Page ends here -->
 </body>
 </html>

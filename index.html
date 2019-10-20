@@ -4,84 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My personal portofolio built from scratch">
+    <meta name="description" content="My personal portfolio built from scratch">
     <meta name="author" content="Marlon Weiss">
-    <title>Marlon's Portofolio | Welcome</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./style/style.css">   
+    <title>Marlon's Portfolio | Welcome</title>
 </head>
 <body>
     <div class="page">
         <header>
             <div class="container">
+                <!-- My own Logo -->    
                 <div id="logo">
-                    <img src="./img/logo.png" alt="MyLogo">
+                    <a href="index.html"><img src="./img/logo.png" alt="MyLogo"></a>
                 </div>
-                <nav>
+                <!-- Navigation -->
+                <nav class="mainNav">
                     <ul>
                         <li class="home"><a href="index.html" class="home">home</a></li>
                         <li><a href="projects.html" class="project">projects</a></li>
                         <li><a href="about.html" class="about">about me</a></li>
-                        <li><a href="contact.html" class="contact">contact</a></li>
+                        <li><a href="contact.html" class="contacts">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-
-    <div id="content">
-        <section id="presentation">
-            <div class="container">
-                <hgroup>
-                    <h1 class="main-title">My own Portofolio</h1>
-                    <h3 class="under-title">showing some of my recent creations</h3>
-                </hgroup>
+            
+        <!-- Top Container -->
+        <section class="top-container">
+            <header class="presentation">
+                <h1 class="main-title">My own Portfolio</h1>
+                <p class="under-title">showing some of my recent creations</p>
+                <a href="#post1" class="buttons">Explore</a>
+            </header>
+        <!-- Top Boxes -->
+            <div class="sidelink sidelink-a">
+                <h3>Some of my sidelinks</h3>
+                <a href="https://github.com/Marlon2000">Github</a><br />
+                <a href="https://www.youtube.com/channel/UCIBfatk8wIZMt_t6xbkT9iw/playlists">Youtube</a><br />
+                <a href="mailto: marlonweiss2000@gmail.com?subject=Kontakt über Portofolio">Email Me</a>
             </div>
-        </section>
-        
-        <section id="posts">
-            <div class="container">
-                <article class="article1">
-                    <figure>
-                            <span class="date">25th July</span>
-                            <figcaption>Uno Card Game</figcaption>
-                            <img src="./img/UNOgame.jpg" alt="UNO Picture"><br />
-                            <a href="projects.html" class="buttons">Full Story</a>
-                    </figure>
-                </article>
-                <article class="article2">
-                    <figure>
-                            <span class="date">Release date:<br />24th December 2024</span>
-                            <figcaption>Android Indie Game</figcaption>
-                            <img src="./img/Android.jpg" alt="Android App"><br />
-                            <a href="projects.html" class="buttons">Full Story</a>
-                    </figure>
-                </article>
+            <div class="sidelink sidelink-b">
+                <h3>Contact</h3>
+                <p>Marlons Lab<br />
+                Zuerich<br />
+                Switzerland</p>
             </div>
         </section>
 
-    <aside>
-        <section id="sidelinks">
-            <div class="container">
-                    <section id="myLinks">
-                        <h2>Some of my Sidelinks</h2>
-                        <a href="https://github.com/Marlon2000/portofolio">Github</a><br />
-                        <a href="https://www.youtube.com/channel/UCIBfatk8wIZMt_t6xbkT9iw/featured?view_as=subscriber">Youtube</a><br />
-                        <a href="">Gmail</a>
-                    </section>
-
-                    <section id="personalInformation">
-                            <h2>Contact</h2>
-                            <p>Marlons Lab<br />
-                            Zuerich<br />
-                            Switzerland</p>
-                    </section>
+        <!-- Boxes Section -->
+        <section class="icon-boxes">
+            <div class="icon">
+                <i class="fab fa-github fa-4x"></i>
+                <h3>Github</h3>
+                <p>Here you can see my latest projects
+                and those I am currently working on.</p>
+            </div>
+            <div class="icon">
+                <i class="fab fa-youtube fa-4x"></i>
+                <h3>Youtube</h3>
+                <p>This upper sidelink redirects you to my yt channel. 
+                In the playlist you can view some of my gameplay.</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-envelope fa-4x"></i>
+                <h3>Gmail</h3>
+                <p>Any ideas or suggestions what I can do better,
+                feel free to write me about it then.</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-tasks fa-4x"></i>
+                <h3>Projects</h3>
+                <p>Underneath this site you can learn more 
+                about my current projects.</p>
             </div>
         </section>
-    </aside>
+
+        <!-- Posts Section -->
+        <section id="post1">
+            <img src="./img/UNOgame.jpg" alt="UNO Picture">
+            <div class="article1">
+                <span class="date">25th July</span>
+                <h2>Uno Card Game</h2>
+                <p>You know the classic UNO Card Game, 
+                which has been invented 1969 by Merle Robins.
+                I had to realise UNO as a digital version written in Java.
+                So I spent much free time on this project in order to
+                get it done in time.</p>
+                <a href="projects.html" class="buttons">Full Story</a>
+            </div>
+        </section>
+        <section id="post2">
+            <img src="./img/Desktop_Game.jpg" alt="Java 2D Game">
+            <div class="article2">
+                <span class="date">16th September</span>
+                <h2>Chappie's Adventure</h2>
+                <p>A 2D-based platform game, where you go through an adventure
+                with your character Chappie. But watch out for the enemies,
+                it will be a hard path you have to go through. This game was
+                invented since I was always inspired by the New Super Mario
+                Bros Series from Nintendo.</p>
+                <a href="projects.html" class="buttons">Full Story</a>
+            </div>
+        </section>            
+        <section id="post3">
+            <img src="./img/Android.jpg" alt="Android App">
+            <div class="article3">
+                <span class="date">Release date:<br />24th December 2024</span>
+                <h2>Android Indie Game</h2>
+                <p>My next project which I am really looking forward to.
+                But since game development is completely different from
+                regular applications and you have to render it frame by
+                frame, I did first some regular desktop games with Java.</p>
+                <a href="projects.html" class="buttons">Full Story</a>
+            </div>
+        </section>
+
+        <!-- Images of my Portfolio -->
+        <section class="images">
+            <img src="./img/portfolio/Switzerland.jpg" alt="My Homeland">
+            <img src="./img/portfolio/Cliffs.jpg" alt="Cliffs in Lauterbrunnen">
+            <img src="./img/portfolio/Programmer.jpg" alt="Programming Outside">
+            <img src="./img/portfolio/Photography.jpg" alt="Photographer on Cliffs">
+            <img src="./img/portfolio/Cycling.jpg" alt="A random Bicycle">
+            <img src="./img/portfolio/Running.jpg" alt="A random Runner">
+            <img src="./img/portfolio/P30Pro.jpg" alt="Huawei P30 Pro">
+            <img src="./img/portfolio/PC.jpg" alt="DIY PC">
+            <img src="./img/portfolio/Sneakers.jpg" alt="A pair of Shoes">
+        </section>
+
+        <!-- Footer of my page -->
+        <footer>
+            <p>&copy; 2019 Marlon Weiss</p>
+        </footer>
     </div>
-    
-    <footer>
-        <p>&copy; 2019 Marlon Weiss</p>
-    </footer>
-    </div>
+    <!-- Page ends here -->
 </body>
 </html>

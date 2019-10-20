@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My personal portofolio built from scratch">
+    <meta name="description" content="My personal portfolio built from scratch">
     <meta name="author" content="Marlon Weiss">
-    <title>Marlon's Portofolio | Contact</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="./style/style.css">   
+    <title>Marlon's Portfolio | Projects</title>
 </head>
 <body>
     <div class="page">
         <header>
             <div class="container">
+                <!-- My own Logo -->    
                 <div id="logo">
-                    <img src="./img/logo.png" alt="MyLogo">
+                    <a href="index.html"><img src="./img/logo.png" alt="MyLogo"></a>
                 </div>
-                <nav>
+                <!-- Navigation -->
+                <nav class="mainNav">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="projects.html">projects</a></li>
-                        <li><a href="about.html">about me</a></li>
-                        <li class="home"><a href="contact.html" class="home">contact</a></li>
+                        <li class="home"><a href="index.html" class="home">home</a></li>
+                        <li><a href="projects.html" class="project">projects</a></li>
+                        <li><a href="about.html" class="about">about me</a></li>
+                        <li><a href="contact.html" class="contacts">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        
-        <section id="contact">
+
+        <!-- Contact -->
+        <section class="contact">
             <div class="container">
-                <table>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Phone Number</th>
-                        <th>Mail</th>
-                    </tr>
-                    <tr>
-                        <td>Marlon</td>
-                        <td>Weiss</td>
-                        <td>0787006879</td>
-                        <td>marlon.weiss@outlook.com</td>
-                    </tr>
-                </table>
+                <h1>Contact Me</h1>
+                <h6>Let's work together</h6>
             </div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name.." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="service">Services:</label>
+                <select name="services" id="service">
+                    <option value="">Web Development</option>
+                    <option value="">Application Development</option>
+                    <option value="">App Development</option>
+                </select>
+                <label for="note">Note:</label>
+                <textarea name="note" id="note" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </section>
 
+        <!-- Footer of my page -->
+        <footer>
+            <p>&copy; 2019 Marlon Weiss</p>
+        </footer>
     </div>
-    
-    <footer>
-        <p>&copy; 2019 Marlon Weiss</p>
-    </footer>
-    </div>
+    <!-- Page ends here -->
 </body>
 </html>
