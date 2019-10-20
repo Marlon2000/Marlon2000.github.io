@@ -86,7 +86,7 @@ ul {
     box-shadow: var(--shadow);
 }
 
-.mainNav .home {
+.mainNav .current {
     color: #1f53b4;
     font-weight: bolder;
 }
